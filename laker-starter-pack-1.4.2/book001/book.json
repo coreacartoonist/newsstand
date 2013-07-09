@@ -1,0 +1,27 @@
+{
+    "hpub": 1,
+    "title": "월간 조관제",
+    "author": ["조관제"],
+    "creator": ["Cartoon Campus"],
+    "date": "2013-07-06",
+    "url": "book://www.cartooncampus.co.kr",
+
+    "orientation": "both",
+    "zoomable": false,
+
+    "-baker-background": "#ffff",
+    "-baker-vertical-bounce": true,
+    "-baker-index-height": 200,
+    "-baker-media-autoplay": true,
+    "-baker-background-image-portrait": "images/background-portrait.png",
+    "-baker-background-image-landscape": "images/background-landscape.png",
+    "-baker-page-numbers-color": "#333",
+
+    "contents": [
+        "Cover.html",
+        "Introduction.html",
+        "Interactivity.html",
+        "Structure_and_Columns.html",
+        "Maps.html"
+     ]
+}
