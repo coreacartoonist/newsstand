@@ -1,10 +1,10 @@
 {
     "hpub": 1,
-    "title": "Laker Example",
-    "author": ["Florian Franke"],
-    "creator": ["Florian Franke"],
+    "title": "월간 김단비",
+    "author": ["김단비"],
+    "creator": ["만화예술인 사회적협동조합 카툰캠퍼스"],
     "date": "2011-12-27",
-    "url": "book://lakercompendium.com/book/",
+    "url": "book://www.cartooncampus.co.kr/book006",
 
     "orientation": "both",
     "zoomable": false,

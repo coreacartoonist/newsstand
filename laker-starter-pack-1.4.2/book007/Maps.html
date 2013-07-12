@@ -1,6 +1,6 @@
 <!--
 #####################################################################
-LAKER Version 1.2 – http://www.lakercompendium.com
+카툰캠퍼스 Powered by LAKER Version 1.2 – http://www.lakercompendium.com
 #####################################################################
 #####################################################################
 This is a dossier file.
@@ -36,7 +36,7 @@ META information ###########################################################
 
 
 <!--Title. The content of the title is displayed on the loading screen on iOS devices-->
-<title>Dossier 4 • Google Maps</title>
+<title>어느 샐러리맨의 하루</title>
 
 <!--
 ############################################################################
@@ -73,14 +73,14 @@ Javascripts ################################################################
 
 <!--
 ############################################################################
-"Table of content" in navigation bar #######################################
+목차 , 네비게이션 바에 위치,"Table of content" in navigation bar #######################################
 ############################################################################
 -->
 
 <div class="nav-bar">
 	<div class="nav-bar-container">
 		
-        <a href="#Inhaltsverzeichnis" class="nav-button toc"><div class="toc-label">Inhaltsverzeichnis</div>
+        <a href="#Inhaltsverzeichnis" class="nav-button toc"><div class="toc-label">카툰캠퍼스</div>
 		
         <div class="toc-list">
 			<!--Include "Table of content" from external file-->
@@ -107,17 +107,17 @@ Start dossier navigation in navigation bar #################################
 <!--Include the small logo and the cover link-->
 <div id="includeLogoAndCoverlink" csi:src="inc/logo-coverlink.html"></div>
 
-<!--Link to the next dossier. It's the last page, so we don't need that one.
-<a href="02.html" class="nav-button next">
-	<div class="nav-button-text">Next Dossier</div>
-</a>-->
-
-<!--Link to the previous dossier-->
-<a href="Structure_and_Columns.html" class="nav-button prev">
-	<div class="nav-button-text">Previous Dossier</div>
+<!--Link to the next dossier-->
+<a href="Interactivity.html" class="nav-button next">
+	<div class="nav-button-text">Next</div>
 </a>
 
-<!--Implementing the Dossier-Number-->
+<!--Link to the previous dossier. It's the first page, so we don't need that one.
+<a href="001.html" class="nav-button prev">
+	<div class="nav-button-text">Previous Dossier</div>
+</a>-->
+
+<!--번호,Implementing the Dossier-Number-->
 <div id="dossier-number" class="dossier-number"><p>04</p></div>
 
 <!--Navigation bar edges-->
@@ -153,21 +153,82 @@ Start content ##############################################################
 <div class="content-element">
         <!--Starting Headline-->
         <div class="starting-headline">
-              <h1>Implementing GoogleMaps</h1>
+             
         </div><!--Div starting headline-->
-</div><!--Div content element-->
+</div>
+<!--Div content element-->
 
 <!--Main content-->
 
-
+<!--"content-element" ensures, that content is placed within the right margins-->
 <div class="content-element">
-              <p>Just paste the embed code of GoogleMaps into the HTML-Code and adjust the width to 100%. That's it!</p>
-</div><!--Div content element-->
 
 
-<iframe width="100%" height="480" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.google.de/maps?f=q&amp;source=s_q&amp;hl=de&amp;geocode=&amp;q=new+york+city&amp;sll=51.151786,10.415039&amp;sspn=22.197694,37.353516&amp;vpsrc=6&amp;t=h&amp;ie=UTF8&amp;hq=&amp;hnear=New+York+City,+New+York,+Vereinigte+Staaten&amp;ll=40.734251,-74.010086&amp;spn=0.249745,0.439453&amp;z=11&amp;iwloc=A&amp;output=embed"></iframe>
+<div class="large-column float-left">
+
+</div>
+<!--Div large-column float-left-->
 
 
+<div class="large-column float-left">
+      <h2>어느 샐러리맨의 하루</h2>
+</div><!--Div dossier float-left-->
+</div><!--Div content-element-->
+
+<!--
+############################################################################
+ImageSlideshow #############################################################
+############################################################################
+-->
+
+<div id="imgscroll-content">
+<div id="imgscroll-legend"><p>» Swipe for more pictures.</p></div>
+<div id="imgscroll-imgs">
+
+<!--Picture 1-->
+<div class="imgscroll-img" id="imgscroll-img">
+	<img src="images/dossier-04/cut001.jpg" />
+	<div class="caption"><p>Page#1</p></div>
+</div>
+<!--imgscroll-content-->
+
+<!--Picture 2-->
+<div class="imgscroll-img" id="imgscroll-img">
+	<img src="images/dossier-04/cut002.jpg" />
+	<div class="caption"><p>Page#2</p></div>
+</div><!--imgscroll-content-->
+
+<!--Picture 3-->
+<div class="imgscroll-img" id="imgscroll-img">
+	<img src="images/dossier-04/cut003.jpg" />
+	<div class="caption"><p>Page#3</p></div>
+</div><!--imgscroll-content-->
+<!--Picture 4-->
+<div class="imgscroll-img" id="imgscroll-img">
+	<img src="images/dossier-04/cut004.jpg" />
+	<div class="caption"><p>Page#4</p></div>
+</div><!--imgscroll-content-->
+<!--Picture 5-->
+<div class="imgscroll-img" id="imgscroll-img">
+	<img src="images/dossier-04/cut005.jpg" />
+	<div class="caption"><p>Page#5</p></div>
+</div><!--imgscroll-content-->
+<!--Picture 6-->
+<div class="imgscroll-img" id="imgscroll-img">
+	<img src="images/dossier-04/cut006.jpg" />
+	<div class="caption"><p>Page End</p></div>
+</div><!--imgscroll-content-->
+</div><!--Div imgscroll-imgs-->
+</div><!--Div imgscroll-content-->
+
+<!--Initiating the slideshow by calling the JS-->
+<script src="js/imgscroll.js" type="text/javascript"></script>
+
+<!--
+############################################################################
+ImageSlideshow End #########################################################
+############################################################################
+-->
 
 
   <!--

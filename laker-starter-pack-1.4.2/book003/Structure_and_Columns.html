@@ -1,6 +1,6 @@
 <!--
 #####################################################################
-LAKER Version 1.2 – http://www.lakercompendium.com
+카툰캠퍼스 Powered by LAKER Version 1.2 – http://www.lakercompendium.com
 #####################################################################
 #####################################################################
 This is a dossier file.
@@ -36,7 +36,7 @@ META information ###########################################################
 
 
 <!--Title. The content of the title is displayed on the loading screen on iOS devices-->
-<title>Dossier 3 • Structure & columns</title>
+<title>어느 샐러리맨의 하루</title>
 
 <!--
 ############################################################################
@@ -61,11 +61,10 @@ Javascripts ################################################################
 <script type="text/javascript" src="js/tmt_core.js"></script>
 <script type="text/javascript" src="js/tmt_net.js"></script>
 <script type="text/javascript" src="js/tmt_csi.js"></script>
-<script type="text/javascript" src="js/article-nav.js"></script>
+<script src="js/jquery.touchSwipe-1.2.1.js" type="text/javascript"></script>
 
 <!--Mandatory JavaScripts (Uncomment if not used to speed up performance)
 <script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
-<script src="js/jquery.touchSwipe-1.2.1.js" type="text/javascript"></script>
 -->
 
 </head>
@@ -74,14 +73,14 @@ Javascripts ################################################################
 
 <!--
 ############################################################################
-"Table of content" in navigation bar #######################################
+목차 , 네비게이션 바에 위치,"Table of content" in navigation bar #######################################
 ############################################################################
 -->
 
 <div class="nav-bar">
 	<div class="nav-bar-container">
 		
-        <a href="#Inhaltsverzeichnis" class="nav-button toc"><div class="toc-label">Inhaltsverzeichnis</div>
+        <a href="#Inhaltsverzeichnis" class="nav-button toc"><div class="toc-label">카툰캠퍼스</div>
 		
         <div class="toc-list">
 			<!--Include "Table of content" from external file-->
@@ -108,17 +107,17 @@ Start dossier navigation in navigation bar #################################
 <!--Include the small logo and the cover link-->
 <div id="includeLogoAndCoverlink" csi:src="inc/logo-coverlink.html"></div>
 
-<!--Link to the next dossier.-->
-<a href="Maps.html" class="nav-button next">
-	<div class="nav-button-text">Next Dossier</div>
+<!--Link to the next dossier-->
+<a href="Interactivity.html" class="nav-button next">
+	<div class="nav-button-text">Next</div>
 </a>
 
-<!--Link to the previous dossier-->
-<a href="Interactivity.html" class="nav-button prev">
+<!--Link to the previous dossier. It's the first page, so we don't need that one.
+<a href="001.html" class="nav-button prev">
 	<div class="nav-button-text">Previous Dossier</div>
-</a>
+</a>-->
 
-<!--Implementing the Dossier-Number-->
+<!--번호,Implementing the Dossier-Number-->
 <div id="dossier-number" class="dossier-number"><p>03</p></div>
 
 <!--Navigation bar edges-->
@@ -150,66 +149,88 @@ Start content ##############################################################
 <!--Arrow which indicates the start of the text-->
 <div class="dossier-headline-arrow"><img src="images/dossier-headline-arrow.png" /></div>
 
-
 <!--"content-element" ensures, that content is placed within the right margins-->
 <div class="content-element">
         <!--Starting Headline-->
         <div class="starting-headline">
-              <h1>Structure &amp; Columns</h1>
+             
         </div><!--Div starting headline-->
-</div><!--Div content element-->
+</div>
+<!--Div content element-->
 
+<!--Main content-->
 
 <!--"content-element" ensures, that content is placed within the right margins-->
 <div class="content-element">
 
-<!--Main content-->
-<div class="small-column float-right">
-	<p>Class: <br />
-	  &quot;small-column float-right&quot;<br /> 
-	  Integer eu elit massa. Morbi vestibulum lacus a quam sagittis pulvinar tristique arcu posuere. Aliquam sollicitudin risus risus, at semper neque.</p>
-</div><!--small-column float-right-->
+
+<div class="large-column float-left">
+
+</div>
+<!--Div large-column float-left-->
 
 
-<div class="large-column float-left"> 
-      <p>Class: &quot;large-column float-left&quot;<br />
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas velit tortor, ullamcorper id laoreet vel, ultricies ut lorem. Curabitur porta orci ut lacus vestibulum porttitor. Suspendisse potenti. Donec sodales ante eu dui molestie euismod ultricies nisl sollicitudin. Phasellus eget mauris eu velit mollis consectetur a in elit. Pellentesque eu lorem nunc. Integer eu elit massa. Morbi vestibulum lacus a quam sagittis pulvinar tristique arcu posuere. Aliquam sollicitudin risus risus, at semper neque. Aliquam rhoncus rhoncus ultrices. Aliquam erat volutpat. Aenean in nibh vitae leo placerat viverra. Pellentesque non sapien ac orci fermentum molestie in vitae purus. Cras lacinia turpis nec orci blandit adipiscing. Morbi tempor commodo leo, quis scelerisque risus pretium quis. Cras suscipit magna eget tortor sagittis fringilla. Praesent arcu justo, ultrices eu interdum nec, ornare aliquam urna. Vivamus cursus posuere erat id faucibus.</p>
-<br />
-</div><!--large-column float-left-->
-
-<!--Align text block on the right-->
-<div class="large-column float-right">
-     <h1>Pellentesque vitae elit et enim tristique porta porttitor at dolor</h1>
-</div><!--Div large-column float-right-->
-     
-     <!--Small-Column left-->
-<div class="small-column float-left">
-	<p>Class: "small-column float-left"<br />Ut scelerisque cursus leo, id consectetur est semper a.</p>
-</div><!-- Div small-column float-left-->
-
-     <div class="large-column float-right">
-      <p>Class: "large-column float-right"<br />Aliquam fermentum nibh quis risus placerat ultrices. Nulla congue lacus sed ligula commodo tincidunt. Aliquam erat volutpat. Nunc porta, velit non gravida pharetra, nisl dolor ultricies urna, at feugiat est nunc in mi. Fusce sagittis felis quis magna aliquam nec venenatis libero sodales. Fusce lacus metus, scelerisque at cursus in, sollicitudin et urna. Praesent in sodales nisl. Pellentesque ut dolor eget velit scelerisque faucibus quis hendrerit magna. Phasellus malesuada malesuada arcu, consequat pharetra odio bibendum ac. Curabitur sodales cursus eros luctus mattis. Quisque iaculis, quam eget egestas vestibulum, purus tellus ultrices elit, id dictum quam nisl in augue. Sed non mauris at sapien suscipit condimentum sed id leo. Maecenas vitae arcu lectus. Pellentesque pulvinar suscipit quam, sit amet lacinia nibh aliquam eget. Vivamus ornare ligula eget metus aliquet nec vehicula sapien suscipit. Ut scelerisque cursus leo, id consectetur est semper a.</p>
-      <br /><br />
-</div><!--Div large-column float-right-->
-
-
-<div class="full-column">
-      <h1>Class: "full-column" – <br />This headline uses the whole page width.</h1>
-</div><!--Div full-column-->
-
-<div class="medium-column float-left">
-      <p>Class: "medium-column float-left"<br />
-      Morbi semper ultrices porta. Aenean dignissim, sapien eget sodales mollis, massa urna malesuada elit, sit amet vulputate justo augue in massa. Praesent mattis accumsan blandit. Mauris nec enim ante. Sed fringilla interdum eros, nec lacinia turpis iaculis vel. Vestibulum leo ipsum, consequat a dignissim sit amet, egestas in urna. Donec nisl velit, pulvinar id ullamcorper vitae, imperdiet et leo. Donec ultricies cursus varius. Pellentesque elit arcu, pulvinar in fermentum non, faucibus eu quam. Suspendisse mollis aliquam sagittis. Vestibulum pellentesque accumsan arcu, vitae mattis tellus luctus id. Vivamus sed condimentum leo.</p>
-</div><!--Div medium-column float-left-->
-
-<div class="medium-column float-right">
-      <p>Class: "medium-column float-right"<br /> Aliquam fermentum nibh quis risus placerat ultrices. Nulla congue lacus sed ligula commodo tincidunt. Aliquam erat volutpat. Nunc porta, velit non gravida pharetra, nisl dolor ultricies urna, at feugiat est nunc in mi. Fusce sagittis felis quis magna aliquam nec venenatis libero sodales. Fusce lacus metus, scelerisque at cursus in, sollicitudin et urna. Praesent in sodales nisl. Pellentesque ut dolor eget velit scelerisque faucibus quis hendrerit magna. Phasellus malesuada malesuada arcu, consequat pharetra odio bibendum ac. Curabitur sodales cursus eros luctus mattis. Quisque iaculis, quam eget egestas vestibulum, purus tellus ultrices elit, id dictum quam nisl in augue. Sed non mauris at sapien suscipit condimentum sed id leo. Maecenas vitae arcu lectus. Pellentesque pulvinar suscipit quam, sit amet lacinia nibh aliquam eget. Vivamus ornare ligula eget metus aliquet nec vehicula sapien suscipit. Ut scelerisque cursus leo, id consectetur est semper a.</p>
-</div><!--Div medium-column float-left-->
-
+<div class="large-column float-left">
+      <h2>어느 샐러리맨의 하루</h2>
+</div><!--Div dossier float-left-->
 </div><!--Div content-element-->
 
-  
-  
+<!--
+############################################################################
+ImageSlideshow #############################################################
+############################################################################
+-->
+
+<div id="imgscroll-content">
+<div id="imgscroll-legend"><p>» Swipe for more pictures.</p></div>
+<div id="imgscroll-imgs">
+
+<!--Picture 1-->
+<div class="imgscroll-img" id="imgscroll-img">
+	<img src="images/dossier-03/cut001.jpg" />
+	<div class="caption"><p>Page#1</p></div>
+</div>
+<!--imgscroll-content-->
+
+<!--Picture 2-->
+<div class="imgscroll-img" id="imgscroll-img">
+	<img src="images/dossier-03/cut002.jpg" />
+	<div class="caption"><p>Page#2</p></div>
+</div><!--imgscroll-content-->
+
+<!--Picture 3-->
+<div class="imgscroll-img" id="imgscroll-img">
+	<img src="images/dossier-03/cut003.jpg" />
+	<div class="caption"><p>Page#3</p></div>
+</div><!--imgscroll-content-->
+<!--Picture 4-->
+<div class="imgscroll-img" id="imgscroll-img">
+	<img src="images/dossier-03/cut004.jpg" />
+	<div class="caption"><p>Page#4</p></div>
+</div><!--imgscroll-content-->
+<!--Picture 5-->
+<div class="imgscroll-img" id="imgscroll-img">
+	<img src="images/dossier-03/cut005.jpg" />
+	<div class="caption"><p>Page#5</p></div>
+</div><!--imgscroll-content-->
+<!--Picture 6-->
+<div class="imgscroll-img" id="imgscroll-img">
+	<img src="images/dossier-03/cut006.jpg" />
+	<div class="caption"><p>Page End</p></div>
+</div><!--imgscroll-content-->
+</div><!--Div imgscroll-imgs-->
+</div><!--Div imgscroll-content-->
+
+<!--Initiating the slideshow by calling the JS-->
+<script src="js/imgscroll.js" type="text/javascript"></script>
+
+<!--
+############################################################################
+ImageSlideshow End #########################################################
+############################################################################
+-->
+
+
   <!--
 ############################################################################
 End of content #############################################################

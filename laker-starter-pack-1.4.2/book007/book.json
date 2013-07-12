@@ -1,10 +1,10 @@
 {
     "hpub": 1,
-    "title": "Laker Example",
-    "author": ["Florian Franke"],
-    "creator": ["Florian Franke"],
-    "date": "2011-12-27",
-    "url": "book://lakercompendium.com/book/",
+    "title": "월간 김가현",
+    "author": ["김가현"],
+    "creator": ["만화예술인 사회적협동조합 카툰캠퍼스"],
+    "date": "2013-06-27",
+    "url": "book://www.cartooncampus.co.kr/book007",
 
     "orientation": "both",
     "zoomable": false,

@@ -1,15 +1,15 @@
 {
     "hpub": 1,
-    "title": "Laker Example",
-    "author": ["Florian Franke"],
-    "creator": ["Florian Franke"],
-    "date": "2011-12-27",
-    "url": "book://lakercompendium.com/book/",
+    "title": "월간 양서정",
+    "author": ["양서정"],
+    "creator": ["만화예술인 사회적협동조합 카툰캠퍼스"],
+    "date": "2013-06-06",
+    "url": "book://www.cartooncampus.co.kr/book003",
 
     "orientation": "both",
     "zoomable": false,
 
-    "-baker-background": "#fff",
+    "-baker-background": "#ffff",
     "-baker-vertical-bounce": true,
     "-baker-index-height": 200,
     "-baker-media-autoplay": true,

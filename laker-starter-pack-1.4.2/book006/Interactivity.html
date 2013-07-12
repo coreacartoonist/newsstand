@@ -1,6 +1,6 @@
 <!--
 #####################################################################
-LAKER Version 1.2 – http://www.lakercompendium.com
+카툰캠퍼스 Powered by LAKER Version 1.2 – http://www.lakercompendium.com
 #####################################################################
 #####################################################################
 This is a dossier file.
@@ -36,7 +36,7 @@ META information ###########################################################
 
 
 <!--Title. The content of the title is displayed on the loading screen on iOS devices-->
-<title>Dossier 2 •  YouTube, card-flip and sounds</title>
+<title>어느 샐러리맨의 하루</title>
 
 <!--
 ############################################################################
@@ -61,18 +61,10 @@ Javascripts ################################################################
 <script type="text/javascript" src="js/tmt_core.js"></script>
 <script type="text/javascript" src="js/tmt_net.js"></script>
 <script type="text/javascript" src="js/tmt_csi.js"></script>
-
-<!--Card Flip Effect-->
-<script type="text/javascript" src="js/jquery-css-transform.js"></script>
-<script type="text/javascript" src="js/rotate3Di.js"></script>
-
-<!--Audio Player-->
-<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
-
+<script src="js/jquery.touchSwipe-1.2.1.js" type="text/javascript"></script>
 
 <!--Mandatory JavaScripts (Uncomment if not used to speed up performance)
 <script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
-<script src="js/jquery.touchSwipe-1.2.1.js" type="text/javascript"></script>
 -->
 
 </head>
@@ -81,14 +73,14 @@ Javascripts ################################################################
 
 <!--
 ############################################################################
-"Table of content" in navigation bar #######################################
+목차 , 네비게이션 바에 위치,"Table of content" in navigation bar #######################################
 ############################################################################
 -->
 
 <div class="nav-bar">
 	<div class="nav-bar-container">
 		
-        <a href="#Inhaltsverzeichnis" class="nav-button toc"><div class="toc-label">Inhaltsverzeichnis</div>
+        <a href="#Inhaltsverzeichnis" class="nav-button toc"><div class="toc-label">카툰캠퍼스</div>
 		
         <div class="toc-list">
 			<!--Include "Table of content" from external file-->
@@ -116,16 +108,16 @@ Start dossier navigation in navigation bar #################################
 <div id="includeLogoAndCoverlink" csi:src="inc/logo-coverlink.html"></div>
 
 <!--Link to the next dossier-->
-<a href="Structure_and_Columns.html" class="nav-button next">
-	<div class="nav-button-text">Next Dossier</div>
+<a href="Interactivity.html" class="nav-button next">
+	<div class="nav-button-text">Next</div>
 </a>
 
-<!--Link to the previous dossier-->
-<a href="Introduction.html" class="nav-button prev">
+<!--Link to the previous dossier. It's the first page, so we don't need that one.
+<a href="001.html" class="nav-button prev">
 	<div class="nav-button-text">Previous Dossier</div>
-</a>
+</a>-->
 
-<!--Implementing the Dossier-Number-->
+<!--번호,Implementing the Dossier-Number-->
 <div id="dossier-number" class="dossier-number"><p>02</p></div>
 
 <!--Navigation bar edges-->
@@ -161,224 +153,84 @@ Start content ##############################################################
 <div class="content-element">
         <!--Starting Headline-->
         <div class="starting-headline">
-              <h1>Embedding YouTube Videos, the card-flip effect and playing sound</h1>
+             
         </div><!--Div starting headline-->
-</div><!--Div content element-->
+</div>
+<!--Div content element-->
+
+<!--Main content-->
 
 <!--"content-element" ensures, that content is placed within the right margins-->
 <div class="content-element">
 
-<!--Main content-->
+
 <div class="large-column float-left">
-     <p>Class: "large-column float-left"<br />Morbi semper ultrices porta. Aenean dignissim, sapien eget sodales mollis, massa urna malesuada elit, sit amet vulputate justo augue in massa. Praesent mattis accumsan blandit. Mauris nec enim ante. Sed fringilla interdum eros, nec lacinia turpis iaculis vel. Vestibulum leo ipsum, consequat a dignissim sit amet, egestas in urna. Donec nisl velit, pulvinar id ullamcorper vitae, imperdiet et leo. Donec ultricies cursus varius. Pellentesque elit arcu, pulvinar in fermentum non, faucibus eu quam. Suspendisse mollis aliquam sagittis. Vestibulum pellentesque accumsan arcu, vitae mattis tellus luctus id. Vivamus sed condimentum leo.</p>
-     
-<!--Embed YouTube-Video. Note: Use the "old" embed code. The iframe-Version won't work in the LAKER iOS app.-->
-<div class="media-right">
-<object width="1280" height="750"><param name="movie" value="http://www.youtube.com/v/S9in-BscH5M?fs=1&amp;hl=de_DE&amp;hd=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/S9in-BscH5M?fs=1&amp;hl=de_DE&amp;hd=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="1280" height="750"></embed></object>
-<div class="caption"><p>Time lapse NYC by Josh Owens <br />(Internetconnection required).</p></div><!--Div caption-->
-</div><!--Div media right-->
 
-  <p>Donec molestie dui et nisl posuere volutpat rhoncus mauris porta. Etiam blandit dui at leo rutrum sed tempus erat rutrum. Nunc ac mauris risus, sed sagittis elit. Nulla sed mi at neque aliquam rutrum. Donec sed est in justo commodo convallis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut tellus justo, scelerisque vitae accumsan tempus, volutpat vel risus. Pellentesque vitae elit et enim tristique porta porttitor at dolor. Suspendisse elementum mattis congue. Proin elementum, tellus sit amet ullamcorper cursus, augue libero hendrerit massa, placerat viverra velit tellus nec urna.</p>
-</div><!--Div large-column float-left-->
-
-
-
-<div class="full-column">
-     <h1>Card Flip Effect</h1>
-     
-<div class="card-flip">
-	
-        <div class="front">
-        <div class="flip-arrow"><img src="images/flip-arrow.png" width="49" height="48" /></div>
-            <div class="card-flip-text">
-           		 <p> Front. <br />
-           		 Please click (tap) me.
-           		 </p>
-            </div><!--Div card-flip-text-->
-        </div><!--Div front-->
-        
-        
-        <div class="back">
-        <div class="flip-arrow-back"><img src="images/flip-arrow-back.png" width="49" height="48" /></div>
-            <div class="card-flip-text">
-            	<p>Back. <br />
-            	Great! Now click (tap) me again.
-            	</p>
-            </div><!--Div card-flip-text-->
-        </div><!--Div back-->
-        
-</div><!--Div card-flip-->
-
-
-
-<div class="card-flip">
-	
-        <div class="front">
-        <div class="flip-arrow"><img src="images/flip-arrow.png" width="49" height="48" /></div>
-            <div class="card-flip-text">
-           		 <p> Front. <br />
-           		 Please click (tap) me.
-           		 </p>
-            </div><!--Div card-flip-text-->
-        </div><!--Div front-->
-        
-        
-        <div class="back">
-        <div class="flip-arrow-back"><img src="images/flip-arrow-back.png" width="49" height="48" /></div>
-            <div class="card-flip-text">
-            	<p>Back. <br />
-            	Great! Now click (tap) me again.
-            	</p>
-            </div><!--Div card-flip-text-->
-        </div><!--Div back-->
-        
-</div><!--Div card-flip-->
-
-
-<div class="card-flip">
-	
-        <div class="front">
-        <div class="flip-arrow"><img src="images/flip-arrow.png" width="49" height="48" /></div>
-            <div class="card-flip-text">
-           		 <p> Front. <br />
-           		 Please click (tap) me.
-           		 </p>
-            </div><!--Div card-flip-text-->
-        </div><!--Div front-->
-        
-        
-        <div class="back">
-        <div class="flip-arrow-back"><img src="images/flip-arrow-back.png" width="49" height="48" /></div>
-            <div class="card-flip-text">
-            	<p>Back. <br />
-            	Great! Now click (tap) me again.
-            	</p>
-            </div><!--Div card-flip-text-->
-        </div><!--Div back-->
-        
-</div><!--Div card-flip-->
-
-
-<div class="card-flip">
-	
-        <div class="front">
-        <div class="flip-arrow"><img src="images/flip-arrow.png" width="49" height="48" /></div>
-            <div class="card-flip-text">
-           		 <p> Front. <br />
-           		 Please click (tap) me.
-           		 </p>
-            </div><!--Div card-flip-text-->
-        </div><!--Div front-->
-        
-        
-        <div class="back">
-        <div class="flip-arrow-back"><img src="images/flip-arrow-back.png" width="49" height="48" /></div>
-            <div class="card-flip-text">
-            	<p>Back. <br />
-            	Great! Now click (tap) me again.
-            	</p>
-            </div><!--Div card-flip-text-->
-        </div><!--Div back-->
-        
-</div><!--Div card-flip-->
-
-<!--Initiate Card-Flip-Script after all cards have been loaded-->
-<script type="text/javascript" src="js/card-flip.js"></script>
-
-</div><!--Div large-column-left-->
-
-
-
-<!--Playing sounds-->
-
-
-<!-- Javascript-Configuration for Audioplayer -->
-<script type="text/javascript">
-
-$(document).ready(function(){
-
-// Audioplayer begin //////////////////////////////////////////////////
-	$("#funky-music").jPlayer({
-		ready: function () {
-			$(this).jPlayer("setMedia", {
-				mp3: "sounds/time-to-go.mp3",
-				oga: "sounds/time-to-go.ogg",
-				});
-		},
-		ended: function (event) {
-			
-		},
-		swfPath: "js",
-		supplied: "mp3,oga",
-		backgroundColor: "transparent",
-		cssSelectorAncestor: "#jp_interface"
-	})	
-	
-	.bind($.jPlayer.event.play, function() { // Using a jPlayer event to avoid both jPlayers playing together.
-			$(this).jPlayer("pauseOthers");
-	});
-	
-});
-// Audioplayer End //////////////////////////////////////////////////
-
-
-</script>
-
-
-<div class="large-column-left">
-<h1>Implementing sounds</h1>
 </div>
-
-<div class="small-column float-right">
-	
-<!--Audioplayer-->
-<div id="funky-music" class="jp-jplayer"></div>
-        <div class="jp-audio">
-			<div class="jp-type-single">
-				<div id="jp_interface" class="jp-interface">
-					<div class="jp-controls">
-						<a href="#" class="jp-play" tabindex="1">
-                        	<div class="sound-box">
-                        		<p>Play some funky music.</p><span class="jp-current-time"></span> <span>/</span> <span class="jp-duration-inactive">01:39</span>
-                            </div><!--Div sound-box-->
-                        </a>
-                        
-						<a href="#" class="jp-pause" tabindex="1">
-                            <div class="sound-box-active">
-                                <p>Play some funky music.</p>
-                                <span class="jp-current-time"></span> <span>/</span>	<span class="jp-duration"></span>
-                            </div><!--Div sound-box-->
-                        </a>
-					</div><!--Div jp-controls-->
-					
-				</div><!--Div jp-interface-->
-				
-			</div><!--Div jp-type-single-->
-		</div><!--Div jp-audio-->
-<!-- Audio End-->
-
-    
-    
-    
-</div><!--small-column float-right-->
+<!--Div large-column float-left-->
 
 
-<div class="large-column float-left"> 
-      <p>Class: &quot;large-column float-left&quot;<br /></p>
-      <p>Music credits: <a href="http://www.pacdv.com">http://www.pacdv.com</a></p>
-      <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas velit tortor, ullamcorper id laoreet vel, ultricies ut lorem. Curabitur porta orci ut lacus vestibulum porttitor. Suspendisse potenti. Donec sodales ante eu dui molestie euismod ultricies nisl sollicitudin. Phasellus eget mauris eu velit mollis consectetur a in elit. Pellentesque eu lorem nunc. Integer eu elit massa. Morbi vestibulum lacus a quam sagittis pulvinar tristique arcu posuere. Aliquam sollicitudin risus risus, at semper neque. Aliquam rhoncus rhoncus ultrices. Aliquam erat volutpat. Aenean in nibh vitae leo placerat viverra. Pellentesque non sapien ac orci fermentum molestie in vitae purus. Cras lacinia turpis nec orci blandit adipiscing. Morbi tempor commodo leo, quis scelerisque risus pretium quis. Cras suscipit magna eget tortor sagittis fringilla. Praesent arcu justo, ultrices eu interdum nec, ornare aliquam urna. Vivamus cursus posuere erat id faucibus.</p>
-<br />
-</div><!--large-column float-left-->
-
-
-
-
-
+<div class="large-column float-left">
+      <h2>어느 샐러리맨의 하루</h2>
+</div><!--Div dossier float-left-->
 </div><!--Div content-element-->
 
-  
-  
+<!--
+############################################################################
+ImageSlideshow #############################################################
+############################################################################
+-->
+
+<div id="imgscroll-content">
+<div id="imgscroll-legend"><p>» Swipe for more pictures.</p></div>
+<div id="imgscroll-imgs">
+
+<!--Picture 1-->
+<div class="imgscroll-img" id="imgscroll-img">
+	<img src="images/dossier-02/cut001.jpg" />
+	<div class="caption"><p>Page#1</p></div>
+</div>
+<!--imgscroll-content-->
+
+<!--Picture 2-->
+<div class="imgscroll-img" id="imgscroll-img">
+	<img src="images/dossier-02/cut002.jpg" />
+	<div class="caption"><p>Page#2</p></div>
+</div><!--imgscroll-content-->
+
+<!--Picture 3-->
+<div class="imgscroll-img" id="imgscroll-img">
+	<img src="images/dossier-02/cut003.jpg" />
+	<div class="caption"><p>Page#3</p></div>
+</div><!--imgscroll-content-->
+<!--Picture 4-->
+<div class="imgscroll-img" id="imgscroll-img">
+	<img src="images/dossier-02/cut004.jpg" />
+	<div class="caption"><p>Page#4</p></div>
+</div><!--imgscroll-content-->
+<!--Picture 5-->
+<div class="imgscroll-img" id="imgscroll-img">
+	<img src="images/dossier-02/cut005.jpg" />
+	<div class="caption"><p>Page#5</p></div>
+</div><!--imgscroll-content-->
+<!--Picture 6-->
+<div class="imgscroll-img" id="imgscroll-img">
+	<img src="images/dossier-02/cut006.jpg" />
+	<div class="caption"><p>Page End</p></div>
+</div><!--imgscroll-content-->
+</div><!--Div imgscroll-imgs-->
+</div><!--Div imgscroll-content-->
+
+<!--Initiating the slideshow by calling the JS-->
+<script src="js/imgscroll.js" type="text/javascript"></script>
+
+<!--
+############################################################################
+ImageSlideshow End #########################################################
+############################################################################
+-->
+
+
   <!--
 ############################################################################
 End of content #############################################################
