@@ -1,0 +1,27 @@
+{
+    "hpub": 1,
+    "title": "월간 구민선",
+    "author": ["구민선"],
+    "creator": ["만화예술인 사회적협동조합 카툰캠퍼스"],
+    "date": "2013-06-28",
+    "url": "book://www.cartooncampus.co.kr/book008",
+
+    "orientation": "both",
+    "zoomable": false,
+
+    "-baker-background": "#fff",
+    "-baker-vertical-bounce": true,
+    "-baker-index-height": 200,
+    "-baker-media-autoplay": true,
+    "-baker-background-image-portrait": "images/background-portrait.png",
+    "-baker-background-image-landscape": "images/background-landscape.png",
+    "-baker-page-numbers-color": "#333",
+
+    "contents": [
+        "Cover.html",
+        "Introduction.html",
+        "Interactivity.html",
+        "Structure_and_Columns.html",
+        "Maps.html"
+     ]
+}
